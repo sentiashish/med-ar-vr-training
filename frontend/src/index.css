@@ -127,6 +127,127 @@ body {
   margin-bottom: 0.5rem;
 }
 
+.anatomy-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 280px;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.anatomy-viewer-wrap {
+  border: 1px solid #bfdbfe;
+  border-radius: 0.9rem;
+  height: 460px;
+  overflow: hidden;
+  background: #f8fbff;
+}
+
+.anatomy-side-panel {
+  display: grid;
+  gap: 0.75rem;
+  align-content: start;
+}
+
+.anatomy-info-panel {
+  border: 1px solid #dbeafe;
+  border-radius: 0.9rem;
+  padding: 0.9rem;
+  background: #f8fbff;
+}
+
+.anatomy-info-panel h3 {
+  margin: 0 0 0.45rem;
+}
+
+.muted-text {
+  color: #64748b;
+}
+
+.part-label {
+  margin: 0 0 0.35rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.part-color-row {
+  margin-top: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  color: #334155;
+}
+
+.part-color-dot {
+  width: 0.85rem;
+  height: 0.85rem;
+  border-radius: 999px;
+  border: 1px solid #94a3b8;
+}
+
+.oxygenation-badge-row {
+  margin-top: 0.6rem;
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.oxygenation-badge {
+  border-radius: 999px;
+  font-size: 0.75rem;
+  padding: 0.15rem 0.5rem;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+.oxygenation-oxygenated {
+  background: #fee2e2;
+  color: #991b1b;
+  border: 1px solid #fca5a5;
+}
+
+.oxygenation-deoxygenated {
+  background: #dbeafe;
+  color: #1e3a8a;
+  border: 1px solid #93c5fd;
+}
+
+.oxygenation-mixed {
+  background: #ede9fe;
+  color: #5b21b6;
+  border: 1px solid #c4b5fd;
+}
+
+.flow-text {
+  margin: 0.5rem 0 0;
+  color: #1f2937;
+}
+
+.panel-note {
+  margin-top: 0.65rem;
+  font-size: 0.82rem;
+  color: #475569;
+}
+
+.action-button {
+  border: 1px solid #93c5fd;
+  background: #ffffff;
+  color: #1d4ed8;
+  border-radius: 0.7rem;
+  padding: 0.55rem 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.heart-floating-label {
+  background: rgba(15, 23, 42, 0.92);
+  color: #ffffff;
+  border: 1px solid #1d4ed8;
+  border-radius: 999px;
+  padding: 0.2rem 0.55rem;
+  font-size: 0.75rem;
+  white-space: nowrap;
+}
+
 @media (max-width: 768px) {
   #root {
     padding: 0.75rem;
@@ -138,5 +259,13 @@ body {
 
   .app-title {
     font-size: 1.5rem;
+  }
+
+  .anatomy-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .anatomy-viewer-wrap {
+    height: 360px;
   }
 }
