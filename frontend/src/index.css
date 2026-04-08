@@ -1,0 +1,142 @@
+:root {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #1e293b;
+  background: radial-gradient(circle at top right, #dbeafe, #f8fafc 40%, #eef2ff);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+  padding: 1.25rem;
+}
+
+.app-shell {
+  max-width: 1100px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.78);
+  backdrop-filter: blur(8px);
+  border: 1px solid #dbeafe;
+  border-radius: 1.25rem;
+  box-shadow: 0 20px 50px rgba(37, 99, 235, 0.15);
+  padding: 1.25rem;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.app-kicker {
+  margin: 0;
+  color: #2563eb;
+  font-size: 0.85rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.app-title {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.app-subtitle {
+  margin: 0;
+  align-self: end;
+  color: #334155;
+}
+
+.main-nav {
+  display: flex;
+  gap: 0.6rem;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.nav-link {
+  color: #334155;
+  text-decoration: none;
+  padding: 0.5rem 0.8rem;
+  border-radius: 999px;
+  border: 1px solid #cbd5e1;
+  white-space: nowrap;
+  font-weight: 600;
+}
+
+.nav-link-active {
+  color: #ffffff;
+  border-color: #2563eb;
+  background: linear-gradient(135deg, #2563eb, #14b8a6);
+}
+
+.main-content {
+  display: grid;
+  gap: 1rem;
+}
+
+.page-section {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.section-header h2 {
+  margin: 0 0 0.2rem;
+}
+
+.section-header p {
+  margin: 0;
+  color: #475569;
+}
+
+.placeholder-card {
+  margin-top: 0.9rem;
+  border: 1px dashed #93c5fd;
+  padding: 0.9rem;
+  border-radius: 0.75rem;
+  color: #0f172a;
+  background: #f8fbff;
+}
+
+.checklist {
+  margin: 0.9rem 0 0;
+  padding-left: 1.2rem;
+}
+
+.checklist li {
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  #root {
+    padding: 0.75rem;
+  }
+
+  .app-shell {
+    padding: 0.85rem;
+  }
+
+  .app-title {
+    font-size: 1.5rem;
+  }
+}
